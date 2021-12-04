@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWORD-ORG/LED-7Seg-DEMO/DEMO_LED_7seg.xst" -ofn "D:/FPGA_work/SWORD-ORG/LED-7Seg-DEMO/DEMO_LED_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code/ngc -nt timestamp -uc Code/DEMO-LED-7Seg.ucf -p xc7k160t-ffg676-2L DEMO_LED_7seg.ngc DEMO_LED_7seg.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DEMO_LED_7seg_map.ncd DEMO_LED_7seg.ngd DEMO_LED_7seg.pcf 
+par -w -intstyle ise -ol high -mt off DEMO_LED_7seg_map.ncd DEMO_LED_7seg.ncd DEMO_LED_7seg.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml DEMO_LED_7seg.twx DEMO_LED_7seg.ncd -o DEMO_LED_7seg.twr DEMO_LED_7seg.pcf 
+bitgen -intstyle ise -f DEMO_LED_7seg.ut DEMO_LED_7seg.ncd 

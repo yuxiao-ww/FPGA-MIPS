@@ -1,0 +1,4 @@
+verilog work "Code/ngc/P2S_IO.v"
+verilog work "Code/ngc/LED_P2S_IO.v"
+verilog work "Code/clk_div.v"
+verilog work "Code/DEMO_LED_7seg.v"

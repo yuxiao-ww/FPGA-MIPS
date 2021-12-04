@@ -1,0 +1,17 @@
+inst_rom[0] = 32'b34010101;
+inst_rom[1] = 32'b3c02ffff;
+inst_rom[2] = 32'b3403f004;
+inst_rom[3] = 32'b00431025;
+inst_rom[4] = 32'b00601824;
+inst_rom[5] = 32'bac410000;
+inst_rom[6] = 32'b3c02ffff;
+inst_rom[7] = 32'b3403f008;
+inst_rom[8] = 32'b00431025;
+inst_rom[9] = 32'b00601824;
+inst_rom[10] = 32'b8c440000;
+inst_rom[11] = 32'b3c02ffff;
+inst_rom[12] = 32'b3c01000f;
+inst_rom[13] = 32'b34210004;
+inst_rom[14] = 32'b00011825;
+inst_rom[15] = 32'b00431025;
+inst_rom[16] = 32'bac440000;
